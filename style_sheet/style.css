@@ -149,8 +149,6 @@ header > img {
 }
 @media only screen and (max-width: 688px) {
   nav,
-  .ban_black,
-  .ban_white,
   .ban_first,
   header > .container {
     display: none;
@@ -168,7 +166,7 @@ header > img {
     padding: 0;
     width: 100%;
   }
-  body > header > div {
+  body > header > .ok {
     display: none;
   }
 
@@ -185,6 +183,10 @@ header > img {
     text-transform: uppercase;
   }
   .ban_second > div > p {
+    text-shadow: 2px 2px #3c3030;
+
+    z-index: 1;
+    color: #ffffff;
     text-align: justify;
     /* text-align: left; */
     font-size: 18px;
@@ -197,6 +199,7 @@ header > img {
     margin: 5px 0;
   }
   .social_links {
+    z-index: 20;
     margin: 50px 50px;
     /* margin-bottom: 50px; */
     /* margin-top: 50px; */
@@ -206,6 +209,7 @@ header > img {
     color: black;
   }
   .ban_links {
+    z-index: 20;
     display: flex;
     flex-direction: column;
   }
@@ -217,5 +221,22 @@ header > img {
     border-radius: 32px;
     width: 100px;
     /* height: 400px; */
+  }
+  .ban_black {
+    width: 334px;
+    left: -349px;
+    top: 101px;
+    border-radius: 50px;
+  }
+  .ban_white {
+    overflow: hidden;
+    left: 169px;
+    top: 224px;
+    transform: rotate(-61.36deg);
+    position: absolute;
+    width: 375px;
+    height: 387px;
+    background-color: #8d1515;
+    border-radius: 70px;
   }
 }
